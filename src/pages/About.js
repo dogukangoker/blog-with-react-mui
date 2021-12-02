@@ -6,28 +6,44 @@ import {BrowserRouter as Router, Link} from 'react-router-dom'
 import MailIcon from '@mui/icons-material/Mail';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Alert from '@mui/material/Alert';
+import Snackbar from '@mui/material/Snackbar';
+import Alert from '@mui/material/Alert'
 
 export default function About() {
     const [copy,
         setCopy] = useState(false);
+    const [open,
+        setOpen] = useState(false);
+
+    const handleClose = (event, reason) => {
+        if (reason === 'clickaway') {
+            return;
+        }
+
+        setOpen(false);
+    };
 
     function copytoClipboard() {
         navigator
             .clipboard
             .writeText("dogukangkr1234@gmail.com")
         setCopy(true);
+        setOpen(true);
     }
 
     function succesFunc() {
         return (
-            <Alert
-                style={{
-                marginBottom: '5%'
-            }}
-                severity="success">
-                <strong>Panoya kopyalandı!</strong>
-            </Alert>
+            <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
+                <Alert
+                    onClose={handleClose}
+                    variant="filled"
+                    severity="success"
+                    sx={{
+                    width: '100%'
+                }}>
+                    Mail adresi panoya kopyalandı!
+                </Alert>
+            </Snackbar>
         )
     }
     return (

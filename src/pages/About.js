@@ -51,7 +51,8 @@ export default function About() {
             <Container
                 style={{
                 backgroundColor: '#fcfcfc',
-                width: '70%'
+                width: '70%',
+                paddingBottom: '2px'
             }}>
                 <div
                     className="head"

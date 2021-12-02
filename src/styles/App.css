@@ -1,13 +1,12 @@
 .App {
-  margin-top: -20px;
-  padding-top: 25px;
+  padding-top: 0px;
   height: 55px;
   width: 100%;
-  background-color: indianred;
+  background-color: #f8f6f6;
 }
 
 li{
-  color:white;
+  color:black;
   list-style: none;
 }
 
@@ -20,6 +19,7 @@ ul{
 .linkHome{
   padding-right: 20px;
   text-decoration: none;
-  color: white;
+  color: black;
+  font-weight: bold;
 }
 

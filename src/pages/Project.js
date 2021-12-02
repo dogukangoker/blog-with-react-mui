@@ -1,87 +1,97 @@
 import React from 'react'
-import {BrowserRouter as Router, Link} from 'react-router-dom'
+import {BrowserRouter as Router} from 'react-router-dom'
 import Container from '@mui/material/Container'
-import MailIcon from '@mui/icons-material/Mail';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinearProgress from '@mui/material/LinearProgress';
+import CodeIcon from '@mui/icons-material/Code';
+import Avatar from '@mui/material/Avatar'
+import '../styles/Project.css'
 
 function Contact() {
     return (
         <Router>
-            <Container>
+            <Container
+                style={{
+                backgroundColor: '#fcfcfc',
+                width: '70%',
+                paddingBottom: '2px'
+            }}>
+            <div
+                    className="head"
+                    style={{
+                    paddingTop: '2%',
+                    display: 'flex',
+                    textAlign: 'center'
+                }}>
+                    <Avatar
+                        src="https://pps.whatsapp.net/v/t61.24694-24/255360998_593909918427817_1174898732820300854_n.jpg?ccb=11-4&oh=dce530f2d9bee0dbc6fa7202b17a6f27&oe=61AB5BE0"
+                        sx={{
+                        width: 180,
+                        height: 180
+                    }}/>
+
+                </div>
+                <h1
+                    style={{
+                    paddingLeft: '330px',
+                    marginBottom: '-20px',
+                    marginTop: '-55px'
+                }}>Doğukan GÖKER</h1>
+                <h3 style={{
+                    paddingLeft: '400px'
+                }}>21, ANKARA</h3>
                 <div className="main">
-                    <h2>Contact with me!</h2>
-                    <div style={{
-                        display: 'flex'
+                    <div
+                        style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        flexWrap: 'wrap'
                     }}>
-                        <Link
+                        <CodeIcon/>
+                        <h3
                             style={{
-                            display: 'flex',
-                            textDecoration: 'none',
-                            color: 'black'
-                        }}
-                            to="mailto@dogukangkr1234@gmail.com">
-                            <MailIcon
-                                style={{
-                                paddingTop: '5px'
-                            }}
-                                fontSize="large"/>
-                            <p
-                                style={{
-                                fontSize: '16px',
-                                paddingLeft: '5px'
-                            }}>dogukangkr1234@gmail.com</p>
-                        </Link>
+                            marginLeft: '10px'
+                        }}>Programlama</h3>
                     </div>
-                    <div style={{
-                        display: 'flex'
-                    }}>
-                        <Link
+                    <div className="icerik">
+                        HTML5/CSS3 - Front End
+                        <LinearProgress
+                            variant="progress"
+                            position="static"
                             style={{
-                            display: 'flex',
-                            textDecoration: 'none',
-                            color: 'black'
+                            height: '8px',
+                            borderRadius: '25px',
+                            marginBottom: '10px'
                         }}
-                            to={{
-                            pathname: "https://instagram.com/dogukan.gkr"
-                        }}
-                            target="_blank">
-                            <InstagramIcon
-                                style={{
-                                paddingTop: '5px'
-                            }}
-                                fontSize="large"/>
-                            <p
-                                style={{
-                                fontsize: '16px',
-                                paddingLeft: '5px'
-                            }}>dogukangkr</p>
-                        </Link>
-                    </div>
-                    <div style={{
-                        display: 'flex'
-                    }}>
-                        <Link
+                            sx={{
+                            maxWidth: "60%",
+                            flexGrow: 0
+                        }}></LinearProgress>
+                        JAVASCRIPT
+                        <LinearProgress
+                            variant="progress"
+                            position="static"
                             style={{
-                            display: 'flex',
-                            textDecoration: 'none',
-                            color: 'black'
+                            height: '8px',
+                            borderRadius: '25px',
+                            marginBottom: '10px'
                         }}
-                            to={{
-                            pathname: "https://github.com/dogukangoker"
-                        }}
-                            target="_blank">
-                        <GitHubIcon
+                            sx={{
+                            maxWidth: "30%",
+                            flexGrow: 0
+                        }}></LinearProgress>
+                        C#
+                        <LinearProgress
+                            variant="progress"
+                            value={2}
                             style={{
-                            paddingTop: '5px'
+                            height: '8px',
+                            borderRadius: '25px',
+                            marginBottom: '10px'
                         }}
-                            fontSize="large"></GitHubIcon>
-                        <p
-                            style={{
-                            fontSize: '16px',
-                            paddingLeft: '5px'
-                        }}>dogukangoker</p>
-                        </Link>
+                            sx={{
+                            maxWidth: "40%",
+                            flexGrow: 0
+                        }}></LinearProgress>
                     </div>
                 </div>
             </Container>

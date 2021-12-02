@@ -12,10 +12,10 @@ function App() {
             <div className="Menu">
                 <ul>
                     <li>
-                        <Link className="linkHome" to="/">Home</Link>
+                        <Link className="linkHome" to="/">Anasayfa</Link>
                     </li>
                     <li>
-                        <Link className="linkHome" to="/projects">Projects</Link>
+                        <Link className="linkHome" to="/projects">Deneyim</Link>
                     </li>
                 </ul>
             </div>

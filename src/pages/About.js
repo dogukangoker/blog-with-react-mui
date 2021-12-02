@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import '../styles/About.css'
 import Container from '@mui/material/Container'
 import Avatar from '@mui/material/Avatar'
@@ -6,9 +6,30 @@ import {BrowserRouter as Router, Link} from 'react-router-dom'
 import MailIcon from '@mui/icons-material/Mail';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import Spacer from 'react-spacer'
+import Alert from '@mui/material/Alert';
 
-function About() {
+export default function About() {
+    const [copy,
+        setCopy] = useState(false);
+
+    function copytoClipboard() {
+        navigator
+            .clipboard
+            .writeText("dogukangkr1234@gmail.com")
+        setCopy(true);
+    }
+
+    function succesFunc() {
+        return (
+            <Alert
+                style={{
+                marginBottom: '5%'
+            }}
+                severity="success">
+                <strong>Panoya kopyalandı!</strong>
+            </Alert>
+        )
+    }
     return (
         <Router>
             <Container
@@ -41,7 +62,7 @@ function About() {
                     paddingLeft: '400px'
                 }}>21, ANKARA</h3>
                 <div style={{}} className="main">
-                    <h3>About Me</h3>
+                    <h3>Hakkımda</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet
                         tortor nulla. Nulla gravida dui a quam rhoncus luctus. Phasellus augue dolor,
                         lacinia ut consequat a, aliquam at mauris. Proin non dolor nec tortor euismod
@@ -58,13 +79,15 @@ function About() {
                         textDecoration: 'none',
                         color: 'black'
                     }}
-                        to="mailto@dogukangkr1234@gmail.com">
+                        to="">
                         <MailIcon
                             style={{
                             paddingRight: '5px'
                         }}
+                            onClick={() => copytoClipboard()}
                             fontSize="large"/>
                     </Link>
+
                     <Link
                         style={{
                         textDecoration: 'none',
@@ -95,11 +118,13 @@ function About() {
                         }}
                             fontSize="large"></GitHubIcon>
                     </Link>
+                    {copy
+                        ? succesFunc()
+                        : ""}
+                    <span></span>
                 </div>
 
             </Container>
         </Router>
     );
 }
-
-export default About;

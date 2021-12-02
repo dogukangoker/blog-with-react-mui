@@ -1,0 +1,8 @@
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main{
+    margin: 10%;
+    display: flex;
+}

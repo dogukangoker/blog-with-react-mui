@@ -63,21 +63,14 @@ export default function About() {
                 }}>
                     <Avatar
                         src="https://pps.whatsapp.net/v/t61.24694-24/255360998_593909918427817_1174898732820300854_n.jpg?ccb=11-4&oh=dce530f2d9bee0dbc6fa7202b17a6f27&oe=61AB5BE0"
-                        sx={{
-                        width: 180,
-                        height: 180
+                        style={{
+                        width: '30%',
+                        height: '30%'
                     }}/>
 
                 </div>
-                <h1
-                    style={{
-                    paddingLeft: '330px',
-                    marginBottom: '-20px',
-                    marginTop: '-55px'
-                }}>Doğukan GÖKER</h1>
-                <h3 style={{
-                    paddingLeft: '400px'
-                }}>21, ANKARA</h3>
+                <h1 className="responsiveh1">Doğukan GÖKER</h1>
+                <h3 className="responsiveh3" style={{}}>21, ANKARA</h3>
                 <div style={{}} className="main">
                     <h3>Hakkımda</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet

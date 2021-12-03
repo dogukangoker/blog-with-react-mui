@@ -1,15 +1,31 @@
-*{
+* {
     font-family: 'Noto Sans', sans-serif;
 }
 
-body{
+body {
     background-color: #f8f6f6;
 }
 
-.head{
-    margin: 10%;
-    margin-bottom: -10%;
+.head {
+    margin: 10% 10% -10%;
 }
-.main{
+.main {
     margin: 10%;
+}
+
+.responsive{
+    padding-left: 330px;
+    margin-bottom: -20px;
+}
+@media only screen and (max-width:600px) {
+    .responsiveh1 {
+        font-size: 12px;
+        margin-right: 25%;
+        padding-left: -300px;
+    }
+    .responsiveh3 {
+        font-size: 12px;
+        margin-right: 25%;
+        padding-left: -300px;
+    }
 }

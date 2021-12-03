@@ -3,11 +3,13 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import About from './pages/About'
 import Project from './pages/Project'
 import MenuIcon from '@mui/icons-material/Menu';
+import Container from '@mui/material/Container'
 import './styles/App.css';
 
 function App() {
 
     return ( <> <Router>
+        <Container>
         <div className="App">
             <div className="Menu">
                 <ul>
@@ -29,6 +31,7 @@ function App() {
                 </Route>
             </Switch>
         </div>
+        </Container>
     </Router> </>
   );
 }

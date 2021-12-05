@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom'
 import About from './pages/About'
 import Project from './pages/Project'
 import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container'
+import Container from '@mui/material/Container';
 import './styles/App.css';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             <div className="Menu">
                 <ul>
                     <li>
-                        <MenuIcon className="linkHome" />
+                        <MenuIcon className="mena" />
                     </li>
                     <li>
                         <Link className="linkHome" to="/">Anasayfa</Link>

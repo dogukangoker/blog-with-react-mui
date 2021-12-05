@@ -23,3 +23,21 @@ ul{
   font-weight: bold;
 }
 
+ul li .mena{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px){
+  .Menu{
+    font-size: 14px;
+    padding-right: 50%;
+    display: flex;
+  }
+  ul li{
+    padding-left: 10px;
+  }
+  ul li .mena{
+    margin-right: 5%;
+    display: flex;
+  }
+}

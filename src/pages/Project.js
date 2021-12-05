@@ -15,7 +15,7 @@ function Contact() {
                 width: '70%',
                 paddingBottom: '2px'
             }}>
-            <div
+                <div
                     className="head"
                     style={{
                     paddingTop: '2%',
@@ -30,15 +30,8 @@ function Contact() {
                     }}/>
 
                 </div>
-                <h1
-                    style={{
-                    paddingLeft: '330px',
-                    marginBottom: '-20px',
-                    marginTop: '-55px'
-                }}>Doğukan GÖKER</h1>
-                <h3 style={{
-                    paddingLeft: '400px'
-                }}>21, ANKARA</h3>
+                <h1 className="responsiveh1">Doğukan GÖKER</h1>
+                <h3 className="responsiveh3">21, ANKARA</h3>
                 <div className="main">
                     <div
                         style={{

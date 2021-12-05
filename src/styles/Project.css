@@ -15,3 +15,13 @@ body{
     margin-top: 5%;
     
 }
+
+.responsiveh1{
+    padding-left: 330px;
+    margin-bottom: -20px;
+}
+.responsiveh3 {
+    font-size: 16px;
+    margin-right: 25%;
+    padding-left: 400px;
+}

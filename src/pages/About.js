@@ -49,6 +49,7 @@ export default function About() {
     return (
         <Router>
             <Container
+                className="container"
                 style={{
                 backgroundColor: '#fcfcfc',
                 width: '70%',
@@ -62,6 +63,7 @@ export default function About() {
                     textAlign: 'center'
                 }}>
                     <Avatar
+                        className="avatar"
                         src="https://pps.whatsapp.net/v/t61.24694-24/255360998_593909918427817_1174898732820300854_n.jpg?ccb=11-4&oh=dce530f2d9bee0dbc6fa7202b17a6f27&oe=61AB5BE0"
                         style={{
                         width: '30%',

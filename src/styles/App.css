@@ -28,13 +28,15 @@ ul li .mena{
 }
 
 @media only screen and (max-width: 1024px){
+  
   .Menu{
+    margin: 0;
     font-size: 14px;
-    padding-right: 50%;
+    padding-right: 100%;
     display: flex;
   }
   ul li{
-    padding-left: 10px;
+    padding-left: 15%;
   }
   ul li .mena{
     margin-right: 5%;

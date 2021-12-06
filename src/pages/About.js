@@ -35,6 +35,7 @@ export default function About() {
         return (
             <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
                 <Alert
+                    className="alert"
                     onClose={handleClose}
                     variant="filled"
                     severity="success"
